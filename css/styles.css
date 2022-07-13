@@ -1,0 +1,40 @@
+:root{
+    --primety-text-color:#212121;
+    --text-color:#757575;
+    --accent-color:#FFFFFF;
+    --accent-hover-color:#2196F3;
+}
+/*heder*/
+.logo-first{
+    color:var(--accent-hover-color);
+}
+
+.logo-second{
+    color: #000000;
+}
+
+.site-nav a{
+    color: var(--primety-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    color: var(--accent-hover-color);
+}
+/*contacts*/
+.auth-nav a{
+    color: var(--primety-text-color);
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus{
+    color: var(--accent-hover-color);
+}
+
+ul{
+    list-style: none;
+}
+
+/*
+
+
+
