@@ -20,6 +20,11 @@
 .site-nav a:focus{
     color: var(--accent-hover-color);
 }
+
+.site-nav .current{
+    color: var(--accent-hover-color);
+}
+
 /*contacts*/
 .auth-nav a{
     color: var(--primety-text-color);
@@ -34,7 +39,35 @@ ul{
     list-style: none;
 }
 
-/*
+/*перша сторінка клич*/
+.window{
+    background-color:#2F303A ;
+}
+
+.window .window-title{
+    color: var(--accent-color);
+}
+
+/*текст на сторінці*/
+.feature .feature-title{
+    color: var(--primety-text-color);
+}
+.feature .feature-text{
+    color: var(--text-color);
+}
+
+.section .section-title{
+    color: var(--primety-text-color);
+}
+/*button*/
+.button{
+    color: var(--accent-color);
+    background-color: var(--accent-hover-color);
+}
+
+
+
+
 
 
 
