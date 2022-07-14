@@ -65,9 +65,48 @@ ul{
     background-color: var(--accent-hover-color);
 }
 
+.button-second{
+    color: var(--primety-text-color);
+    background-color: #F5F4FA;
+    border-color: transparent;
+}
 
+.button-second:hover,
+.button-second:focus{
+    color: var(--accent-color);
+    background-color: var(--accent-hover-color);
+}
 
+/*портфоліо*/
 
+.list-title{
+    color: var(--primety-text-color);
+}
 
+.list-text{
+    color: var(--text-color);
+}
 
+/*footer*/
+
+.footer{
+    background-color: #2F303A;
+}
+.map{
+    color: var(--accent-color);
+}
+
+.map:hover,
+.map:focus{
+    color: var(--accent-hover-color);
+}
+
+.auth-nav-footer{
+    color: var(--accent-color);
+}
+
+.auth-nav-footer:hover,
+.auth-nav-footer:focus{
+    color: var(--accent-hover-color);
+}
 
