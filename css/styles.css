@@ -4,10 +4,38 @@
     --accent-color:#FFFFFF;
     --accent-hover-color:#2196F3;
 }
+body{
+    color: var(--primety-text-color);
+
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+.hide{
+    visibility:hidden
+}
 /*heder*/
+.pege-header{
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.logo-first,
+.logo-second{
+    font-family: Raleway;
+    letter-spacing: 0.03em
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+/* identical to box height */
 .logo-first{
     color:var(--accent-hover-color);
-}
+    }
 
 .logo-second{
     color: #000000;
@@ -16,6 +44,7 @@
 .site-nav a{
     color: var(--primety-text-color);
 }
+
 .site-nav a:hover,
 .site-nav a:focus{
     color: var(--accent-hover-color);
@@ -42,33 +71,81 @@ ul{
 /*перша сторінка клич*/
 .window{
     background-color:#2F303A ;
+
+    letter-spacing: 0.06em;
 }
 
 .window .window-title{
     color: var(--accent-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /*текст на сторінці*/
 .feature .feature-title{
     color: var(--primety-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 .feature .feature-text{
     color: var(--text-color);
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    }
 
 .section .section-title{
     color: var(--primety-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center
 }
+
+.feature .feature-title-team{
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.2;
+    text-align: center;
+}
+
+.feature .feature-text-team{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
 /*button*/
 .button{
+    font-family: inherit;
     color: var(--accent-color);
     background-color: var(--accent-hover-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 .button-second{
+    font-family: i;
     color: var(--primety-text-color);
     background-color: #F5F4FA;
     border-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .button-second:hover,
@@ -81,10 +158,17 @@ ul{
 
 .list-title{
     color: var(--primety-text-color);
-}
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    }
 
 .list-text{
     color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,9;
 }
 
 /*footer*/
@@ -103,6 +187,10 @@ ul{
 
 .auth-nav-footer{
     color: var(--accent-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .auth-nav-footer:hover,
