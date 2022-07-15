@@ -41,6 +41,10 @@ body{
     color: #000000;
 }
 
+.logo-second-footer{
+    color: var(--accent-color);
+}
+
 .site-nav a{
     color: var(--primety-text-color);
 }
@@ -125,27 +129,30 @@ ul{
 
 /*button*/
 .button{
-    font-family: inherit;
     color: var(--accent-color);
     background-color: var(--accent-hover-color);
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em
 }
 
 .button-second{
-    font-family: i;
     color: var(--primety-text-color);
     background-color: #F5F4FA;
     border-color: transparent;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .button-second:hover,
