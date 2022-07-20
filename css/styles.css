@@ -7,26 +7,35 @@
 
 body {
   color: var(--primety-text-color);
-
   font-weight: 400;
   font-family: roboto, sans-serif;
-  font-style: normal;
 }
-.auth-nav-item, .site-nav-link, .logo-first, .logo-second, .map, .auth-nav-footer{
+
+.auth-nav-item,
+.site-nav-link,
+.logo-first,
+.logo-second,
+.map,
+.auth-nav-footer {
   text-decoration: none;
 }
 
- .list-img{
+.list-img {
   text-decoration: none;
 }
 
-.site-nav-link, .button-second{
+.site-nav-link,
+.button-second {
   cursor: pointer;
 }
 
- li{
+.pege-header-item,
+.auth-nav-item,
+.features-item,
+.work-item,
+.team-item {
   list-style: none;
- }
+}
 
 .hide {
   visibility: hidden;
@@ -40,11 +49,13 @@ body {
   line-height: 1.14;
 }
 
+.auth-nav-link{
+  color: var(--text-color);
+}
 
 .logo-first,
 .logo-second {
   font-family: Raleway;
-  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -79,7 +90,7 @@ body {
 
 /*contacts*/
 .auth-nav a {
-  color: var(--primety-text-color);
+  color: var(--text-color);
 }
 
 .auth-nav a:hover,
@@ -88,27 +99,27 @@ body {
 }
 
 /*перша сторінка клич*/
-.section-greeting {
+.greeting {
   background-color: #2f303a;
-
   letter-spacing: 0.06em;
 }
 
-.section-greeting-title {
+.greeting-title {
   color: var(--accent-color);
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 /*текст на сторінці*/
-.section-title{
+.work-title,
+.team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height:1.2;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -119,23 +130,26 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .features-text {
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
-.section-team{
-  background-color: #F5F4FA;
+.section-team {
+  background-color: #f5f4fa;
 }
 
-.team-title {
+.team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-text {
@@ -143,11 +157,14 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*button*/
+
 .button {
   color: var(--accent-color);
+  cursor: pointer;
   background-color: var(--accent-hover-color);
   font-family: Roboto;
   font-style: normal;
@@ -164,6 +181,7 @@ body {
   color: var(--primety-text-color);
   background-color: #f5f4fa;
   border-color: transparent;
+  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -180,8 +198,15 @@ body {
 }
 
 /*портфоліо*/
+.preview-button{
+  cursor: pointer;
+}
 
-.list-title {
+.preview-button,
+.preview-item{
+  list-style: none;
+}
+.preview-title {
   color: var(--primety-text-color);
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -189,7 +214,7 @@ body {
   line-height: 2;
 }
 
-.list-text {
+.preview-text {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.9;
@@ -197,28 +222,39 @@ body {
 }
 
 /*footer*/
+address{
+  font-style: normal;
+}
 
 .footer {
   background-color: #2f303a;
 }
 
-.map {
+.footer-map {
   color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
-.map:hover,
-.map:focus {
+.footer-map:hover,
+.footer-map:focus {
   color: var(--accent-hover-color);
 }
 
 .auth-nav-footer {
-  color: var(--accent-color);
+ 
+  color: rgba(255, 255, 255, 0.6); 
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
 }
 
 .auth-nav-footer:hover,
 .auth-nav-footer:focus {
   color: var(--accent-hover-color);
+}
+
+.footer-item{
+  list-style: none;
 }
