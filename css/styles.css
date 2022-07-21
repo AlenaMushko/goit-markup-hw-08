@@ -194,7 +194,7 @@ body {
 .button:hover,
 .button-second:focus {
   color: var(--accent-color);
-  background-color: var(--accent-hover-color);
+  background-color: #188ce8;
 }
 
 /*портфоліо*/
