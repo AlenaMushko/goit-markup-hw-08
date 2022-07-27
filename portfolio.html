@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -42,133 +46,152 @@
     </header>
 
     <main>
-      <section class="preview">
-        <h2 class="visually-hidden">навигация</h2>
-        <ul class="preview-list list">
-          <li class="preview-button">
-            <button type="button" class="button-second">Все</button>
-          </li>
+      <section class="preview section">
+        <div class="container">
+          <h2 class="visually-hidden">навигация</h2>
+          <ul class="preview-list list">
+            <li class="preview-button">
+              <button type="button" class="button-second">Все</button>
+            </li>
 
-          <li class="preview-button">
-            <button type="button" class="button-second">Веб-сайты</button>
-          </li>
+            <li class="preview-button">
+              <button type="button" class="button-second">Веб-сайты</button>
+            </li>
 
-          <li class="preview-button">
-            <button type="button" class="button-second">Приложения</button>
-          </li>
+            <li class="preview-button">
+              <button type="button" class="button-second">Приложения</button>
+            </li>
 
-          <li class="preview-button">
-            <button type="button" class="button-second">Дизайн</button>
-          </li>
+            <li class="preview-button">
+              <button type="button" class="button-second">Дизайн</button>
+            </li>
 
-          <li class="preview-button">
-            <button type="button" class="button-second">Маркетинг</button>
-          </li>
-        </ul>
+            <li class="preview-button">
+              <button type="button" class="button-second">Маркетинг</button>
+            </li>
+          </ul>
 
-        <ul class="preview-items list">
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img
-                src="./images/nout.jpg"
-                alt="ноутбук с изображениям веб сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="preview-title">Технокряк</h2>
-              <p class="preview-text">Веб-сайт</p>
-            </a>
-          </li>
+          <ul class="preview-items list">
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img
+                  src="./images/nout.jpg"
+                  alt="ноутбук с изображениям веб сайта"
+                  width="370"
+                  height="294"
+                />
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Технокряк</h2>
+                  <p class="preview-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img
-                src="./images/bascetbol.jpg"
-                alt="двое мужчин играет в баскетбол"
-                width="370"
-                height="294"
-              />
-              <h2 class="preview-title">Постер New Orlean vs Golden Star</h2>
-              <p class="preview-text">Дизайн</p>
-            </a>
-          </li>
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img
+                  src="./images/bascetbol.jpg"
+                  alt="двое мужчин играет в баскетбол"
+                  width="370"
+                  height="294"
+                />
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="preview-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img
-                src="./images/seafood.jpg"
-                alt="реклама магазина рыби с рыбой на заставке"
-                width="370"
-                height="294"
-              />
-              <h2 class="preview-title">Ресторан Seafood</h2>
-              <p class="preview-text">Приложение</p>
-            </a>
-          </li>
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img
+                  src="./images/seafood.jpg"
+                  alt="реклама магазина рыби с рыбой на заставке"
+                  width="370"
+                  height="294"
+                />
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Ресторан Seafood</h2>
+                  <p class="preview-text">Приложение</p>
+                </div>
+              </a>
+            </li>
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img src="./images/prime.jpg" alt="чорные наушники" width="370" height="294" />
-              <h2 class="preview-title">Проект Prime</h2>
-              <p class="preview-text">Маркетинг</p>
-            </a>
-          </li>
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img src="./images/prime.jpg" alt="чорные наушники" width="370" height="294" />
+                <h2 class="preview-title">Проект Prime</h2>
+                <p class="preview-text">Маркетинг</p>
+              </a>
+            </li>
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img
-                src="./images/boxes.jpg"
-                alt="две коробочки из картона"
-                width="370"
-                height="294"
-              />
-              <h2 class="preview-title">Проект Boxes</h2>
-              <p class="preview-text">Приложение</p>
-            </a>
-          </li>
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img
+                  src="./images/boxes.jpg"
+                  alt="две коробочки из картона"
+                  width="370"
+                  height="294"
+                />
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Проект Boxes</h2>
+                  <p class="preview-text">Приложение</p>
+                </div>
+              </a>
+            </li>
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img
-                src="./images/monitor.jpg"
-                alt="чорный монитор с изображением вкб сайта"
-                width="370"
-                height="294"
-              />
-              <h2 class="preview-title">Inspiration has no Borders</h2>
-              <p class="preview-text">Веб-сайт</p>
-            </a>
-          </li>
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img
+                  src="./images/monitor.jpg"
+                  alt="чорный монитор с изображением вкб сайта"
+                  width="370"
+                  height="294"
+                />
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Inspiration has no Borders</h2>
+                  <p class="preview-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img src="./images/booc.jpg" alt="разварот журнала" width="370" height="294" />
-              <h2 class="preview-title">Издание Limited Edition</h2>
-              <p class="preview-text">Дизайн</p>
-            </a>
-          </li>
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img src="./images/booc.jpg" alt="разварот журнала" width="370" height="294" />
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Издание Limited Edition</h2>
+                  <p class="preview-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img src="./images/label.jpg" alt="лейбл на продукцию" width="370" height="294" />
-              <h2 class="preview-title">Проект LAB</h2>
-              <p class="preview-text">Маркетинг</p>
-            </a>
-          </li>
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img src="./images/label.jpg" alt="лейбл на продукцию" width="370" height="294" />
 
-          <li class="preview-item">
-            <a href="#" class="list-img">
-              <img
-                src="./images/leptop.jpg"
-                alt="лептоп с  загруженым приложением"
-                width="370"
-                height="294"
-              />
-              <h2 class="preview-title">Growing Business</h2>
-              <p class="preview-text">Приложение</p>
-            </a>
-          </li>
-        </ul>
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Проект LAB</h2>
+                  <p class="preview-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="preview-item">
+              <a href="#" class="list-img">
+                <img
+                  src="./images/leptop.jpg"
+                  alt="лептоп с  загруженым приложением"
+                  width="370"
+                  height="294"
+                />
+                <div class="preview-wrap">
+                  <h2 class="preview-title">Growing Business</h2>
+                  <p class="preview-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 

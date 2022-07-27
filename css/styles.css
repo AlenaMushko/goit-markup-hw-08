@@ -14,6 +14,29 @@ body {
   font-weight: 400;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
 .link,
 .current {
   text-decoration: none;
@@ -27,7 +50,25 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid red;
+}
+
 /*------------------- collective*/
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .title {
   font-weight: 700;
@@ -89,6 +130,11 @@ body {
   background-color: var(--accend-color);
 }
 
+.button {
+  display: block;
+  margin: 0 auto;
+}
+
 /*-----------------header*/
 
 .pege-header {
@@ -96,6 +142,9 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .site-nav-link {
@@ -145,6 +194,9 @@ body {
 
 .greeting {
   background-color: var(--background-darc-color);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .greeting-title {
@@ -152,9 +204,12 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  max-width: 696px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 
 /*----------------------------features*/
@@ -165,6 +220,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -172,6 +228,22 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  max-width: 270px;
+}
+
+.features-item {
+  margin-bottom: 30px;
+}
+
+/*----------------------work*/
+
+.work {
+  padding-bottom: 80px;
+}
+
+.work-title {
+  margin-bottom: 50px;
 }
 
 /*--------------------team*/
@@ -180,12 +252,25 @@ body {
   background-color: var(--background-grey-color);
 }
 
+.team-title {
+  margin-bottom: 50px;
+}
+
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-subtitle {
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -200,9 +285,11 @@ body {
 
 .footer {
   background-color: var(--background-darc-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-address{
+address {
   font-style: normal;
 }
 
@@ -213,6 +300,15 @@ address{
   letter-spacing: 0.03em;
 }
 
+.footer-item-map {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.footer-mail {
+  margin-bottom: 9px;
+}
+
 .auth-nav-footer {
   font-size: 14px;
   line-height: 1.71;
@@ -221,12 +317,12 @@ address{
 }
 
 .footer-map:hover,
-.footer-map:focus{
+.footer-map:focus {
   color: var(--accend-color);
 }
 
 .auth-nav-footer:hover,
-.auth-nav-footer:focus{
+.auth-nav-footer:focus {
   color: var(--accend-color);
 }
 
@@ -238,6 +334,8 @@ address{
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .preview-text {
@@ -245,4 +343,13 @@ address{
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.preview-list{
+  margin-bottom: 34px;
+}
+
+.preview-wrap{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
