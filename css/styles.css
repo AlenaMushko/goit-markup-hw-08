@@ -93,6 +93,11 @@ img {
 
 /*-------------------button*/
 .button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: transparent;
+
   color: var(--title-color);
   cursor: pointer;
   background-color: var(--accend-color);
@@ -112,6 +117,10 @@ img {
 }
 
 .button-second {
+  display: inline-block;
+  padding: 6px 32px;
+  border: transparent;
+
   color: var(--primery-color);
   background-color: var(--background-grey-color);
   border-color: transparent;
@@ -135,6 +144,31 @@ img {
   margin: 0 auto;
 }
 
+.header-nav {
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .pege-header-item + .pege-header-item {
+  margin-left: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /*-----------------header*/
 
 .pege-header {
@@ -145,6 +179,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  border-bottom: 1px solid #ececec;
 }
 
 .site-nav-link {
@@ -190,6 +225,10 @@ img {
   color: var(--accend-color);
 }
 
+.auth-nav .auth-nav-item + .auth-nav-item {
+  margin-left: 50px;
+}
+
 /*---------------------greeting*/
 
 .greeting {
@@ -201,6 +240,8 @@ img {
 
 .greeting-title {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--title-color);
   font-weight: 900;
@@ -233,8 +274,15 @@ img {
   letter-spacing: 0.03em;
 }
 
+.features-list {
+  display: flex;
+  margin: -15px;
+}
+
 .features-item {
   margin-bottom: 30px;
+  width: ((100%-90px)/4);
+  margin: 15px;
 }
 
 /*----------------------work*/
@@ -245,6 +293,16 @@ img {
 
 .work-title {
   margin-bottom: 50px;
+}
+
+.work-item {
+  width: ((100%-60px)/3);
+  margin: 15px;
+}
+
+.work-list {
+  display: flex;
+  margin: -15px;
 }
 
 /*--------------------team*/
@@ -280,6 +338,16 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-list {
+  display: flex;
+  margin: -15px;
+}
+
+.team-item {
+  width: ((100%-90px)/4);
+  margin: 15px;
 }
 
 /*------------------------footer*/
@@ -349,9 +417,31 @@ address {
 
 .preview-list {
   margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
 }
 
 .preview-wrap {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.preview-button {
+  margin-left: 8px;
+}
+
+.preview-button:first-child {
+  margin-left: 0;
+}
+
+.preview-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.preview-item {
+  width: ((100%-60px)/3);
+  margin: 15px;
+  border-bottom: 1px solid #eeeeee;
 }
