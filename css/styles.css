@@ -155,23 +155,22 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  margin-left: 93px; 
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .pege-header-item + .pege-header-item {
   margin-left: 50px;
 }
 
-.site-nav .link {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
 .auth-nav {
   display: flex;
   margin-left: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+ padding-top: 32px;
+padding-bottom: 32px;
+    align-items: flex-end;
 }
 
 .container-header {
