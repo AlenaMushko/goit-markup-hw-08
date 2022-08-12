@@ -212,7 +212,7 @@ img {
   position: absolute;
 
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   content: '';
   display: block;
@@ -635,7 +635,9 @@ address {
 }
 
 .list-img {
-  display: block;
+  display: block; 
+
+  transform:box-shadow var(--transform) ;
 }
 
 .preview-list {
@@ -704,8 +706,8 @@ address {
   transition: transform var(--transform);
 }
 
-.preview-item:hover .preview-top-text,
-.preview-item:focus .preview-top-text {
+.list-img:hover .preview-top-text,
+.list-img:focus .preview-top-text {
   transform: translateY(0);
   opacity: 1;
 }
@@ -760,6 +762,7 @@ transform: translate(0%, 0%) scale(0) ;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   width: 30px;
   height: 30px;
