@@ -530,6 +530,10 @@ img {
   align-items: baseline;
 }
 
+.footer-address{
+  flex-grow: 1;
+}
+
 .footer-soc {
   margin-left: 70px;
 }
@@ -859,7 +863,7 @@ border-color: var(--accend-color);
 
 /*------------------------------modal-form*/
 .modal-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   font-family: 'Roboto';
   font-weight: 700;
@@ -885,7 +889,7 @@ border-color: var(--accend-color);
   padding: 14px;
   padding-left: 42px;
   margin: 0;
-  margin-top: 4px;
+ 
   cursor: pointer;
 
   font: inherit;
@@ -940,10 +944,12 @@ border-color: var(--accend-color);
 }
 
 .form-textarea {
+  display: block;
   width: 100%;
   min-height: 120px;
   padding: 12px 16px;
   cursor: pointer;
+  resize: none;
 
   font: inherit;
   font-family: 'Roboto';
@@ -980,6 +986,8 @@ border-color: var(--accend-color);
   color: var(--text-color);
   cursor: pointer;
   display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
