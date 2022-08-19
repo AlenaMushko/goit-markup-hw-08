@@ -979,6 +979,8 @@ border-color: var(--accend-color);
   letter-spacing: 0.03;
   color: var(--text-color);
   cursor: pointer;
+  display: flex;
+
 }
 
 .form-check-link {
@@ -996,8 +998,7 @@ border-color: var(--accend-color);
   border: 2px solid #212121;
   border-radius: 3px;
 
-  align-items: center;
-  justify-content: center;
+  
 
   margin-right: 7px;
 
