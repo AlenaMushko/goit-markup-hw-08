@@ -1,4 +1,4 @@
-%logo--first {
+%logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -7,16 +7,13 @@
 }
 
 .logo--first {
-  @extend %logo--first;
+  @extend %logo;
   color: $accend-color;
 }
 
-.logo--second-header {
-  @extend %logo--first;
+.logo--second {
+  @extend %logo;
   color: $accent-second-color;
 }
 
-.logo--second-footer {
-  @extend %logo--first;
-  color: $title-color;
-}
+

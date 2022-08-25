@@ -8,9 +8,13 @@
   }
 }
 
+.team__team-list{
+  margin: -15px;
+}
+
 .team-list {
   display: flex;
-  margin: -15px;
+  
 
   &__item {
     width: calc((100% - 120px) / 4);

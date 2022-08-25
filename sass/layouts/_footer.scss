@@ -5,11 +5,7 @@
 
   background-color: $background-darc-color;
 
-  & .container {
-    display: flex;
-
-    align-items: baseline;
-  }
+  
 
   &__title {
     color: $title-color;
@@ -21,16 +17,30 @@
 
     margin-bottom: 20px;
   }
+
+  &__logo--second{
+    color: $title-color;
+  }
 }
 
-.footer__address {
+.footer .container {
+  display: flex;
+
+  align-items: baseline;
+}
+
+
+.contacts {
   flex-grow: 1;
+}
+
+.footer__address{
+margin-top: 20px;
 }
 
 .address {
   font-style: normal;
-  margin-top: 20px;
-
+  
   & .address__item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -64,7 +74,7 @@
   }
 }
 
-.footer__soc {
+footer__footer-soc{
   margin-left: 70px;
 }
 

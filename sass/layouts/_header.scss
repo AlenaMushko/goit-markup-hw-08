@@ -1,16 +1,20 @@
 /*---------------------------header*/
-.pege-header {
+.header {
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
-}
 
-.header-nav {
+  &__nav {
   display: flex;
   align-items: center;
+  }
+
+  
 }
+
+
 
 .site-nav {
   display: flex;

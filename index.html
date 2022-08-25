@@ -17,11 +17,11 @@
 
   <body>
     <!--heder-->
-    <header class="pege-header">
-      <div class="container container-header">
-        <nav class="header-nav">
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
           <a href="./images/WebStudiologo.jpg" class="logo--first link"
-            >Web<span class="logo--second-header link">Studio</span></a
+            >Web<span class="logo--second link">Studio</span></a
           >
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -125,7 +125,8 @@
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
 
-          <ul class="work-list list">
+          
+          <ul class="work-list work__work-list list">
             <li class="work-list__item">
               <div class="work-list__wrap">
                 <img
@@ -163,7 +164,7 @@
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
-          <ul class="team-list list">
+          <ul class="team-list team__team-list list">
             <li class="team-list__item">
               <img
                 src="./images/man1.jpg"
@@ -383,13 +384,13 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__address">
+        <div class="contacts">
           <a href class="logo--first link"
-            >Web<span class="logo--second-footer link">Studio</span></a
+            >Web<span class="logo--second footer__logo--second link">Studio</span></a
           >
 
           <address>
-            <ul class="address list">
+            <ul class="address footer__address list">
               <li class="address__item">
                 <a
                   class="address__map link"
@@ -410,12 +411,12 @@
           </address>
         </div>
 
-        <div class="footer__soc">
+        <div class="footer-soc footer__footer-soc">
           <h2 class="footer__title">приєднуйтесь</h2>
 
           <ul class="social list">
             <li class="social__item">
-              <a href="" class="social_link--dark-bg link">
+              <a href="" class="social_link social_link--dark-bg link">
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
@@ -423,21 +424,21 @@
             </li>
 
             <li class="social__item">
-              <a href="" class="social_link--dark-bg link">
+              <a href="" class="social_link social_link--dark-bg link">
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social_link--dark-bg link">
+              <a href="" class="social_link social_link--dark-bg link">
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social_link--dark-bg link">
+              <a href="" class="social_link social_link--dark-bg link">
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
@@ -446,15 +447,14 @@
           </ul>
         </div>
 
-        <form class="footer-form">
+        <form class="footer-form footer__footer-form">
           <h2 class="footer__title">Підпишіться на розсилку</h2>
           <div class="footer-form__email" autocomplete="off">
             <input type="email" id="email" name="email" class="footer-form__iput" placeholder=" " />
             <label for="email" class="footer-form__label" placeholder=" ">E-mail</label>
             <button type="submit" class="footer-form__button">
               <svg class="footer-form__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use></svg
-              >Підписатися
+                <use href="./images/icons.svg#icon-send"></use></svg>Підписатися
             </button>
           </div>
         </form>
@@ -513,7 +513,7 @@
             </li>
           </ul>
 
-          <div class="modal-checkbox">
+          <div class="modal-checkbox modal__modal-checkbox">
             <input
               class="modal-checkbox__check visually-hidden"
               id="check"

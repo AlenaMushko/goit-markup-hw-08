@@ -1,7 +1,9 @@
 /*------------------------------footer-form*/
-.footer-form {
+.footer__footer-form {
   margin-left: 93px;
+}
 
+.footer-form {
   &__email {
     display: flex;
     position: relative;
@@ -56,7 +58,7 @@
   &__button {
     @extend .button;
     padding: 10px 28px;
-    text-align: start;
+    justify-content: space-between;
   }
 
   &__icon {
