@@ -1,0 +1,52 @@
+.button {
+  display: block;
+  padding: 10px 32px;
+  margin: 0 auto;
+  min-width: 200px;
+  border: transparent;
+  border-radius: 4px;
+
+  color: $title-color;
+  cursor: pointer;
+  background-color: $accend-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  transition: background-color $transform;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.button--second {
+  @extend .button;
+  min-width: 26px;
+  padding: 6px 22px;
+
+  color: $primery-color;
+  background-color: $background-grey-color;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  transition: color $transform, background-color $transform, box-shadow $transform;
+
+  &:hover,
+  &:focus {
+    color: $title-color;
+    background-color: $accend-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

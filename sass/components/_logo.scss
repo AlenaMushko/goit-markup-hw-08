@@ -1,0 +1,22 @@
+%logo--first {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo--first {
+  @extend %logo--first;
+  color: $accend-color;
+}
+
+.logo--second-header {
+  @extend %logo--first;
+  color: $accent-second-color;
+}
+
+.logo--second-footer {
+  @extend %logo--first;
+  color: $title-color;
+}

@@ -1,0 +1,35 @@
+/*----------------------features*/
+.features-list {
+  display: flex;
+  gap: 30px;
+
+  &__link {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: $background-grey-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 270px;
+
+    color: $text-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}

@@ -1,0 +1,74 @@
+/*------------------------------footer-form*/
+.footer-form {
+  margin-left: 93px;
+
+  &__email {
+    display: flex;
+    position: relative;
+  }
+
+  &__iput {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 358px;
+    margin-right: 12px;
+    font: inherit;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: $title-color;
+
+    &:hover {
+      border-color: $accend-color;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+
+    transform: translateY(-50%);
+
+    font: inherit;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition: transform $transform;
+
+    .footer-form__iput:focus + &,
+    .footer-form__iput:not(:placeholder-shown) + & {
+      transform: translate(-16px, -46px);
+    }
+  }
+
+  &__button {
+    @extend .button;
+    padding: 10px 28px;
+    text-align: start;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    fill: $title-color;
+  }
+}

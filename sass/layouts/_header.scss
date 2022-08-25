@@ -1,0 +1,86 @@
+/*---------------------------header*/
+.pege-header {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+
+  & &__item + &__item {
+    margin-left: 50px;
+  }
+}
+
+.site-nav__link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primery-color;
+
+  transition: color $transform;
+
+  &.current::after {
+    position: absolute;
+
+    left: 0;
+    bottom: -1px;
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accend-color;
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accend-color;
+  }
+}
+
+.site-nav .current {
+  color: $accend-color;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: flex-end;
+
+  &__link {
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+
+    transition: fill $transform, color $transform;
+
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      color: $accend-color;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  & &__item + &__item {
+    margin-left: 50px;
+  }
+}

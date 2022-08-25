@@ -1,0 +1,170 @@
+/*-------------------------modal-form*/
+.modal-form {
+  &__title {
+    margin-bottom: 12px;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primery-color;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+
+    margin-bottom: 20px;
+  }
+
+  &__lable {
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $text-color;
+  }
+
+  &__wrap {
+    position: relative;
+    margin-top: 4px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    padding-left: 42px;
+    margin: 0;
+
+    cursor: pointer;
+
+    font: inherit;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+
+    color: var(--primery-color);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+      outline-color: $accend-color;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+
+    transition: fill $transform, outline-color $transform;
+
+    .modal-form__input:focus ~ &,
+    .modal-form__input:hover ~ & {
+      fill: $accend-color;
+    }
+  }
+}
+
+.modal-form__textarea {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 16px;
+  cursor: pointer;
+  resize: none;
+
+  font: inherit;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+
+  color: $primery-color;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: outline $transform;
+
+  &:focus,
+  &:hover {
+    outline: 1px solid $accend-color;
+  }
+}
+
+/*------------------------checkbox*/
+
+.modal-checkbox {
+  margin-bottom: 30px;
+}
+
+.modal-checkbox__label {
+  position: relative;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 1.46;
+  letter-spacing: 0.03;
+  color: $text-color;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--pact {
+    font: inherit;
+    color: $accend-color;
+  }
+
+  & span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+
+    margin-right: 7px;
+
+    transition: background-color $transform, border $transform;
+
+    .modal-checkbox__check:checked + & {
+      background-color: $accend-color;
+      border: none;
+    }
+
+    .modal-checkbox__check:hover + &,
+    .modal-checkbox__check:focus + & {
+      border-color: $accend-color;
+    }
+  }
+}
+
+.modal-checkbox__span {
+  display: inline-block;
+}
+
+.modal-checkbox__icon {
+  fill: transparent;
+  transition: fill $transform;
+
+  .modal-checkbox__check:checked + .modal-checkbox__label & {
+    fill: $title-color;
+  }
+}
