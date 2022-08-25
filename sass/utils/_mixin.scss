@@ -1,0 +1,20 @@
+@mixin shadow($box-shadow, $background-color, $color){
+
+    box-shadow: $box-shadow;
+    background-color: $background-color;
+    color: $color;
+}
+
+@mixin font ($size, $height, $weight:400, $spacing:0.03em){
+    
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+}
+
+
+    
+
+
+    

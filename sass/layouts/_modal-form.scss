@@ -4,11 +4,8 @@
     margin-bottom: 12px;
 
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font (20px, 1.15, 700, $spacing: 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: $primery-color;
   }
 
@@ -24,11 +21,7 @@
   &__lable {
     margin-bottom: 4px;
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-
+    @include font (12px, 1.17, 400, 0.01em);
     color: $text-color;
   }
 
@@ -48,11 +41,8 @@
 
     font: inherit;
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.7;
-    letter-spacing: 0.01em;
-
+    @include font (12px, 1.7, 400, 0.01em);
+    
     color: var(--primery-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -93,11 +83,7 @@
 
   font: inherit;
   font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-
+  @include font (12px, 1.7, 400, 0.01em);
   color: $primery-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -120,9 +106,7 @@
   position: relative;
   font-family: Roboto;
   font-style: Regular;
-  font-size: 14px;
-  line-height: 1.46;
-  letter-spacing: 0.03;
+  @include font (14px, 1.46, $weight: 400, $spacing: 0.03em);
   color: $text-color;
   cursor: pointer;
   display: flex;
