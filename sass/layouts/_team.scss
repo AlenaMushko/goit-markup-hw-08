@@ -1,22 +1,23 @@
 /*-------------------------team section*/
-.team {
-  background-color: var(--background-grey-color);
+.section--background-color {
+  background-color: $background-grey-color;
+}
 
-  &__title {
+  .section__title {
     @extend %title;
     margin-bottom: 50px;
   }
-}
 
-.team__team-list{
+
+.section__team{
   margin: -15px;
 }
 
-.team-list {
+.team {
   display: flex;
-  
+}
 
-  &__item {
+ .team__item {
     width: calc((100% - 120px) / 4);
     margin: 15px;
     flex-wrap: wrap;
@@ -27,21 +28,21 @@
      
 }
 
-  &__wrap {
+    .team__wrap {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  &__subtitle {
+ .team__subtitle {
     @include font (16px, 1.18, 500, $spacing: 0.03em);
     text-align: center;
     margin-bottom: 10px;
   }
 
-  &__text {
+    .team__text {
     color: var(--text-color);
     @include font (16px, 1.19, $weight: 400, $spacing: 0.03em);
     text-align: center;
     margin-bottom: 16px;
   }
-}
+

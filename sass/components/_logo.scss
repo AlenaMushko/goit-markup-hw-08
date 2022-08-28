@@ -1,15 +1,12 @@
-%logo {
+
+.logo__web {
   font-family: Raleway;
   @include font (26px, 1.19, 700, $spacing: 0.03em);
-}
-
-.logo--first {
-  @extend %logo;
   color: $accend-color;
 }
 
-.logo--second {
-  @extend %logo;
+.logo {
+  @extend .logo__web;
   color: $accent-second-color;
 }
 

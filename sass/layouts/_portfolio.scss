@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.portfolio__button {
+.portfolio__item {
   margin-left: 8px;
   border-radius: 4px;
 
@@ -14,78 +14,83 @@
   }
 }
 
-.portfolio__product{
+.portfolio__product {
   margin: -15px;
 }
 
 .product {
   display: flex;
   flex-wrap: wrap;
-  
+}
 
-  &__item {
-    width: calc((100% - 90px) / 3);
-    margin: 15px;
+.product__item {
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
+}
+
+.product__img {
+  display: block;
+  transform: box-shadow $transform;
+
+  &:hover,
+  &:focus {
+    @include shadow(
+      (
+        0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16)
+      ),
+      null,
+      null
+    );
   }
+}
 
-  &__img {
-    display: block;
-    transform: box-shadow $transform;
+.product__wrap--top {
+  position: relative;
+  overflow: hidden;
+}
 
-    &:hover,
-    &:focus {
-      @include shadow((0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16)), null, null)
-      
-    }
+.product__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+
+  width: 100%;
+  height: 100%;
+  @include font(18px, 1.56, $weight: 400, $spacing: 0.03em);
+  color: $title-color;
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+
+  transition: transform $transform;
+
+  .product__img:hover &,
+  .product__img:focus & {
+    transform: translateY(0);
+    opacity: 1;
   }
+}
 
-  &__wrap--top {
-    position: relative;
-    overflow: hidden;
-  }
+.product__wrap {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 
-  &__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 63px 24px;
+  max-width: 370px;
+}
 
-    width: 100%;
-    height: 100%;
-    @include font (18px, 1.56, $weight: 400, $spacing: 0.03em);
-    color: $title-color;
-    background: rgba(33, 150, 243, 0.9);
+.product__title {
+  margin-bottom: 4px;
 
-    transform: translateY(100%);
+  color: $primery-color;
+  @include font(18px, 2, 700, 0.06em);
+}
 
-    transition: transform $transform;
-
-    .product__img:hover &,
-    .lproduct__img:focus & {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  &__wrap {
-    padding: 20px 24px;
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-
-    max-width: 370px;
-  }
-
-  &__title {
-    margin-bottom: 4px;
-
-    color: $primery-color;
-    @include font (18px, 2, 700, 0.06em);
-  }
-
-  &__after-title {
-    color: $text-color;
-    @include font (16px, 1.88, $weight: 400, $spacing: 0.03em);
-  }
+.product__after-title {
+  color: $text-color;
+  @include font(16px, 1.88, $weight: 400, $spacing: 0.03em);
 }

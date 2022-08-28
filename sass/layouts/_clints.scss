@@ -1,19 +1,19 @@
 /*---------------------------clints*/
-.clints__title {
+.section__title {
   @extend %title;
   margin-bottom: 50px;
 }
 
-.clints-list {
+.clints {
   display: flex;
   gap: 30px;
-
-  &__item {
+}
+  .clints__item {
     width: 170px;
     height: 92px;
   }
 
-  &__link {
+    .clints__link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -31,12 +31,12 @@
     }
   }
 
-  &__icon {
+    .clints__icon {
     transition: fill $transform;
 
-    .clints-list__link:hover &,
-    .clints-list__link:focus & {
+    .clints__link:hover &,
+    .clints__link:focus & {
       fill: $accend-color;
     }
   }
-}
+

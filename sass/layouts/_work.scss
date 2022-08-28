@@ -1,32 +1,33 @@
 /*----------------------work*/
-.work {
+.section--no-padding-top {
   padding-top: 0;
+}
 
-  &__title {
+  .section__title {
     @extend %title;
     margin-bottom: 50px;
   }
-}
 
-.work__work-list{
+
+.section__work--margin-negative{
   margin: -15px;
 }
 
-.work-list {
+.work {
   display: flex;
-  
+}
 
-  &__item {
+  .work__item {
     width: calc((100% - 90px) / 3);
     margin: 15px;
     flex-wrap: wrap;
   }
 
-  &__wrap {
+    .work__wrap {
     position: relative;
   }
 
-  &__text {
+    .work__text {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -42,4 +43,4 @@
 
     color: $title-color;
   }
-}
+
