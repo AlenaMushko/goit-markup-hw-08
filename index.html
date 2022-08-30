@@ -20,9 +20,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="header__nav">
-          <a href="./index.html" class="logo__web"
-            >Web<span class="logo">Studio</span></a
-          >
+          <a href="./index.html" class="logo__web">Web<span class="logo">Studio</span></a>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link--current">Студія</a>
@@ -59,7 +57,7 @@
 
     <main>
       <!--greeting-->
-      <section class="greeting">
+      <section class="greeting block">
         <div class="container">
           <h1 class="greeting__title">ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>замовити послугу</button>
@@ -67,11 +65,11 @@
       </section>
 
       <!--features-->
-      <section class="section">
+      <section class="section block">
         <div class="container">
           <h2 class="visually-hidden">преимущества</h2>
           <ul class="features">
-            <li>
+            <li class="features__item">
               <div class="features__link">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -82,7 +80,7 @@
                 ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="features__item">
               <div class="features__link">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
@@ -94,7 +92,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features__item">
               <div class="features__link">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -106,7 +104,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features__item">
               <div class="features__link">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -122,11 +120,10 @@
       </section>
 
       <!--work-->
-      <section class="section section--no-padding-top">
-        <div class="container">
+      <section class="section section--no-padding-top desktop block">
+        <div class="container desktop">
           <h2 class="section__title">Чим ми займаємося</h2>
 
-          
           <ul class="work section__work--margin-negative">
             <li class="work__item">
               <div class="work__wrap">
@@ -162,16 +159,14 @@
         </div>
       </section>
       <!--team-->
-      <section class="section section--background-color">
+      <section class="section section--background-color block">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team section__team ">
+          <ul class="team section__team">
             <li class="team__item">
-              <img
-                src="./images/man1.jpg"
-                alt="фото мужчины в очках, что улыбается. Похожий на Понамарева "
-                width="270"
-              />
+              <img class="team__link" src="./images/man1.jpg" alt="фото мужчины в очках, что
+              улыбается. Похожий на Понамарева width=" 270" />
+
               <div class="team__wrap">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -209,7 +204,12 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/women.jpg" alt="фото веселой женщины в очках" width="270" />
+              <img
+                class="team__link"
+                src="./images/women.jpg"
+                alt="фото веселой женщины в очках"
+                width="270"
+              />
               <div class="team__wrap">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -248,7 +248,12 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/man2.jpg" alt="фото мужчины с искренней улыбкой" width="270" />
+              <img
+                class="team__link"
+                src="./images/man2.jpg"
+                alt="фото мужчины с искренней улыбкой"
+                width="270"
+              />
               <div class="team__wrap">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -288,6 +293,7 @@
 
             <li class="team__item">
               <img
+                class="team__link"
                 src="./images/man3.jpg"
                 alt="фото мужчины в чорной футболке с улыбкой как в голивудского разбойника"
                 width="270"
@@ -333,7 +339,7 @@
       </section>
 
       <!--clints-->
-      <section class="section">
+      <section class="section block">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clints">
@@ -385,86 +391,95 @@
     </main>
 
     <!--footer-->
-    <footer class="footer">
+    <footer class="footer block">
       <div class="container">
-        <div class="contacts">
-          <a href class="logo__web"
-            >Web<span class="logo footer__logo">Studio</span></a
-          >
+        <div class="footer__wrap">
+          <div class="contacts">
+            <div class="footer-logo">
+              <a href class="logo__web">Web<span class="logo footer__logo">Studio</span></a>
+            </div>
+            <address>
+              <ul class="address footer__address">
+                <li class="address__item">
+                  <a
+                    class="address__map"
+                    href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
 
-          <address>
-            <ul class="address footer__address">
-              <li class="address__item">
-                <a
-                  class="address__map"
-                  href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                <li class="address__item">
+                  <a href="mailo:info@example.com" class="address__cotact">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__cotact">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-soc footer__footer-soc">
+            <h2 class="footer__title">приєднуйтесь</h2>
+
+            <ul class="social list">
+              <li class="social__item">
+                <a href="" class="social_link social_link--dark-bg link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="address__item">
-                <a href="mailo:info@example.com" class="address__cotact">info@example.com</a>
+              <li class="social__item">
+                <a href="" class="social_link social_link--dark-bg link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__cotact">+38 099 111 11 11</a>
+              <li class="social__item">
+                <a href="" class="social_link social_link--dark-bg link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social_link social_link--dark-bg link">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <div class="footer-soc footer__footer-soc">
-          <h2 class="footer__title">приєднуйтесь</h2>
-
-          <ul class="social list">
-            <li class="social__item">
-              <a href="" class="social_link social_link--dark-bg link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a href="" class="social_link social_link--dark-bg link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social_link social_link--dark-bg link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social_link social_link--dark-bg link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <form class="footer-form footer__footer-form">
           <h2 class="footer__title">Підпишіться на розсилку</h2>
           <div class="footer-form__email" autocomplete="off">
-            <input type="email" id="email" name="email" class="footer-form__iput" placeholder=" " />
-            <label for="email" class="footer-form__label" placeholder=" ">E-mail</label>
+            <div class="footer-form__wrap">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="footer-form__iput"
+                placeholder=" "
+              />
+              <label for="email" class="footer-form__label" placeholder=" ">E-mail</label>
+            </div>
             <button type="submit" class="footer-form__button">
               <svg class="footer-form__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use></svg>Підписатися
+                <use href="./images/icons.svg#icon-send"></use></svg
+              >Підписатися
             </button>
           </div>
         </form>
       </div>
     </footer>
 
-<!--modal-->
+    <!--modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div type="button" class="modal__btn" data-modal-close>

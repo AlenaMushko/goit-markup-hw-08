@@ -3,46 +3,66 @@
   background-color: $background-grey-color;
 }
 
-  .section__title {
-    @extend %title;
-    margin-bottom: 50px;
-  }
-
-
-.section__team{
-  margin: -15px;
+.section__title {
+  @extend %title;
+  margin-bottom: 50px;
 }
+
 
 .team {
   display: flex;
-}
+  flex-wrap: wrap;
+  flex-direction: column;
 
- .team__item {
-    width: calc((100% - 120px) / 4);
-    margin: 15px;
+  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
     flex-wrap: wrap;
-    border-radius: 0px 0px 4px 4px;
-
-    @include shadow ((0px 1px 3px rgba(0, 0, 0, 0.12),0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(0, 0, 0, 0.2)), 
-      #ffffff, null) 
-     
+  }
 }
 
-    .team__wrap {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.team__item {
+  border-radius: 0px 0px 4px 4px;
+  margin: 15px;
+  @include shadow(
+    (
+      0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2)
+    ),
+    #ffffff,
+    null
+  );
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
   }
 
- .team__subtitle {
-    @include font (16px, 1.18, 500, $spacing: 0.03em);
-    text-align: center;
-    margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
   }
+}
 
-    .team__text {
-    color: var(--text-color);
-    @include font (16px, 1.19, $weight: 400, $spacing: 0.03em);
-    text-align: center;
-    margin-bottom: 16px;
-  }
+.team__link {
+  margin: 0 auto;
+  width: 100%;
+}
 
+.team__wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__subtitle {
+  @include font(16px, 1.18, 500, $spacing: 0.03em);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team__text {
+  color: var(--text-color);
+  @include font(16px, 1.19, $weight: 400, $spacing: 0.03em);
+  text-align: center;
+  margin-bottom: 16px;
+}

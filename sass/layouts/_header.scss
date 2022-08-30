@@ -1,25 +1,24 @@
 /*---------------------------header*/
 .header {
-  @include font (14px, 1.14, 500, 0.02em);
+  @include font(14px, 1.14, 500, 0.02em);
   border-bottom: 1px solid #ececec;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  }
+}
 
 .site-nav {
   display: flex;
   margin-left: 93px;
 }
 
-  .site-nav .site-nav__item + .site-nav__item {
-    margin-left: 50px;
-  }
+.site-nav .site-nav__item + .site-nav__item {
+  margin-left: 50px;
+}
 
 .site-nav__link {
-  
   padding-top: 32px;
   padding-bottom: 32px;
   color: $primery-color;
@@ -32,7 +31,7 @@
   }
 }
 
-.site-nav__item{
+.site-nav__item {
   position: relative;
 }
 
@@ -60,8 +59,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: flex-end;
-
-  }
+}
 
 .auth-nav__link {
   color: $text-color;
@@ -71,20 +69,18 @@
 
   transition: fill $transform, color $transform;
 
-  
-    &:hover,
-    &:focus {
-      fill: currentColor;
-      color: $accend-color;
-    }
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    color: $accend-color;
+  }
 }
 
- .auth-nav__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
- .auth-nav .auth-nav__item + .auth-nav__item {
-    margin-left: 50px;
-  }
-
+.auth-nav .auth-nav__item + .auth-nav__item {
+  margin-left: 50px;
+}

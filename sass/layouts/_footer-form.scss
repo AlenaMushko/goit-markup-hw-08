@@ -1,15 +1,38 @@
 /*------------------------------footer-form*/
 .footer__footer-form {
-  margin-left: 93px;
+@media screen and (max-width:1199px) {
+   margin-bottom: 60px;
+  }
+
+    @media screen and (min-width:1200px) {
+      margin-left: 93px;
+    }
+ 
 }
 
 .footer-form {
-  &__email {
+@media screen and (max-width:1199px) {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+    .footer-form__email {
     display: flex;
     position: relative;
+
+    @media screen and (max-width:1199px) {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+              }
   }
 
-  &__iput {
+.footer-form__wrap{
+  position: relative;
+}
+
+    .footer-form__iput {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -23,12 +46,19 @@
     @include font (16px, 1.25, $weight: 400, $spacing: 0.03em);
     color: $title-color;
 
+    @media screen and (max-width:1199px) {
+     width: calc(100% - 30px);
+     
+      }
+
+
+
     &:hover {
       border-color: $accend-color;
     }
   }
 
-  &__label {
+ .footer-form__label {
     position: absolute;
     top: 50%;
     left: 16px;
@@ -42,19 +72,26 @@
     color: rgba(255, 255, 255, 0.6);
     transition: transform $transform;
 
+ 
+
     .footer-form__iput:focus + &,
     .footer-form__iput:not(:placeholder-shown) + & {
       transform: translate(-16px, -46px);
     }
   }
 
-  &__button {
+    .footer-form__button {
+      position: relative;
     @extend .button;
     padding: 10px 28px;
     justify-content: space-between;
+
+    @media screen and (max-width:1199px) {
+        margin-top: 20px;
+      }
   }
 
-  &__icon {
+    .footer-form__icon {
     position: absolute;
     top: 50%;
     right: 28px;
@@ -66,4 +103,4 @@
     background-color: transparent;
     fill: $title-color;
   }
-}
+
