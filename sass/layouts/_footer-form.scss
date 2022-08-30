@@ -1,7 +1,13 @@
 /*------------------------------footer-form*/
 .footer__footer-form {
+
+@media screen and (max-width:1199px) {
+        width: 100%;
+  }
+
 @media screen and (max-width:1199px) {
    margin-bottom: 60px;
+    
   }
 
     @media screen and (min-width:1200px) {
@@ -22,7 +28,7 @@
     position: relative;
 
     @media screen and (max-width:1199px) {
-        margin: 0 auto;
+      
         display: flex;
         flex-direction: column;
               }
@@ -30,6 +36,11 @@
 
 .footer-form__wrap{
   position: relative;
+
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+     margin-left: 166px;
+  
+    }
 }
 
     .footer-form__iput {
@@ -37,21 +48,28 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
+
     padding-top: 15px;
     padding-bottom: 15px;
-    min-width: 358px;
-    margin-right: 12px;
+ 
     font: inherit;
     font-family: 'Roboto';
     @include font (16px, 1.25, $weight: 400, $spacing: 0.03em);
     color: $title-color;
 
-    @media screen and (max-width:1199px) {
-     width: calc(100% - 30px);
-     
+    @media screen and (max-width:767px) {
+            width: 100%;
       }
 
+@media screen and (min-width: 768px) {
+    min-width: 450px;
+ 
+  }
 
+@media screen and (min-width: 1200px) {
+  min-width: 358px;
+  margin-right: 12px;
+}
 
     &:hover {
       border-color: $accend-color;
