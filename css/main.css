@@ -228,6 +228,12 @@ a {
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  position: relative;
+  /*display: flex;
+      justify-content: space-between;*/
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,6 +241,46 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 80px;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header__mobile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.header__mobile .is-open {
+  display: block;
 }
 
 .site-nav {
@@ -1063,8 +1109,15 @@ a {
   -webkit-transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
           transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
-  height: auto;
+  height: 100%;
   min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
   .product__img {
@@ -1112,15 +1165,12 @@ a {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   max-width: 370px;
 }
 
-/*.product__wrap:nth-child(1){
-  @media screen and (min-width: 768px) and (max-width:1199px){
-    padding-bottom: 56px;
-  }
-
-}*/
 .product__title {
   margin-bottom: 4px;
   color: #212121;
@@ -1357,12 +1407,4 @@ a {
 }
 .modal-checkbox__check:checked + .modal-checkbox__label .modal-checkbox__icon {
   fill: #ffffff;
-}
-
-header, footer, section {
-  display: none;
-}
-
-.block {
-  display: block;
 }/*# sourceMappingURL=main.css.map */
