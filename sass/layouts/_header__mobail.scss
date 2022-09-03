@@ -1,0 +1,136 @@
+/*--------------------header__mobile*/
+.header__button-menu {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header__mobile {
+  
+    @media screen and (max-width: 767px) {
+
+
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 21px 25px 48px 40px;
+
+
+        background: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+            0px 1px 3px rgba(0, 0, 0, 0.16);
+
+
+        >.container-mobile {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
+        }
+
+    }
+
+    .header__mobile--top .header__button-menu {
+
+        display: block;
+        margin-left: auto;
+    }
+
+
+    .header__mobile--top {
+        top: 0;
+    }
+
+    .header__mobile--bottom {
+        bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    @media screen and(min-width:768px) {
+        display: none;
+    }
+}
+
+
+
+.site-nav {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.site-nav__link,
+.site-nav__link--current {
+    @include font(40px, 1.18, 500, 0.02em);
+    color: $primery-color;
+}
+
+.site-nav__link--current {
+    color: $accend-color;
+}
+
+.auth-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.auth-nav__tel {
+    @include font(34px, 1.18, 500, 0.02em);
+
+    color: $accend-color;
+}
+
+.auth-nav__mail {
+    @include font(24px, 1.17, 500, 0.02em);
+    color: $text-color;
+}
+
+.mobile__sos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.mobile__sos--blue {
+
+    display: flex;
+    padding: 10px;
+}
+
+.mobile__sos--coloring {
+    @include font(18px, 1.22, 500, 0.02em);
+    color: $accend-color;
+}
+
+.mobile__sos .mobile__sos--blue::after+.mobile__sos--blue {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+}
+
+/* --------смужка через бордер
+  .mobile__sos .mobile__sos--blue:not(:last-child) {
+  
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  
+  }*/

@@ -17,25 +17,60 @@
 
   <body modal-open>
     <!--heder-->
-    <header class="header">
-      <div class="container header__container">
-        <nav class="header__nav">
-          <a  class="logo__web">Web<span class="logo">Studio</span></a>
+<header class="header">
+  <div class="container header__container">
+    <a class="logo__web">Web<span class="logo">Studio</span></a>
+<div class="header__tablet">
+    <nav class="header__nav">
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="./index.html" class="site-nav__link">Студія</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="./portfolio.html" class="site-nav__link--current">Портфоліо</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="Контакты" class="site-nav__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    
+<ul class="auth-nav">
+  <li class="auth-nav__item">
+    <a href="mailto:info@devstudio.com" class="auth-nav__link">
+      <svg class="auth-nav__icon" width="16" height="12">
+        <use href="./images/icons.svg#icon-envelope-hover"></use>
+      </svg>
+      info@devstudio.com</a>
+  </li>
+  <li class="auth-nav__item">
+    <a href="tel:+380961111111" class="auth-nav__link">
+      <svg class="auth-nav__icon" width="10" height="16">
+        <use href="./images/icons.svg#icon-smartphone"></use>
+      </svg>
+      +38 096 111 11 11
+    </a>
+  </li>
+</ul>
+  </div>
+    <!--mobail-->
+    <button class="header__button-menu " type="button" data-menu-open>
+      <svg width="40" height="40" aria-label="переключає мобільне меню">
+        <use class="icon-cross" href="./images/icons.svg#icon-menu_40px"></use>
+      </svg>
+    </button>
 
-          <button
-            class="menu-button is-open"
-            type="button"
-            aria-expanded="false"
-            aria-controls="header__mobile"
-            data-menu-button
-          >
+    <div class="header__mobile is-hidden" id="header__mobile" data-menu>
+      <div class="container-mobile">
+        <div class="header__mobile--top">
+
+          <button class="header__button-menu " type="button" data-menu-close>
             <svg width="40" height="40" aria-label="переключає мобільне меню">
               <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
-              <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
           </button>
 
-          <div class="header__mobile" id="header__mobile" data-menu>
+          <nav class="header__nav">
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a href="./index.html" class="site-nav__link">Студія</a>
@@ -47,29 +82,38 @@
                 <a href="Контакты" class="site-nav__link">Контакти</a>
               </li>
             </ul>
+          </nav>
+        </div>
 
-            <ul class="auth-nav">
-              <li class="auth-nav__item">
-                <a href="mailto:info@devstudio.com" class="auth-nav__link">
-                  <svg class="auth-nav__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope-hover"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="auth-nav__item">
-                <a href="tel:+380961111111" class="auth-nav__link">
-                  <svg class="auth-nav__icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="header__mobile--bottom">
+          <ul class="auth-nav">
+            <li class="auth-nav__item">
+              <a href="tel:+380961111111" class="auth-nav__tel"> +38 096 111 11 11 </a>
+            </li>
+            <li class="auth-nav__item">
+              <a href="mailto:info@devstudio.com" class="auth-nav__mail"> info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile__sos">
+            <li class="mobile__sos--blue">
+              <a class="mobile__sos--coloring" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li class="mobile__sos--blue">
+              <a class="mobile__sos--coloring" href="" target="_blank" rel="noopener noreferrer nofollow">Twitter</a>
+            </li>
+            <li class="mobile__sos--blue">
+              <a class="mobile__sos--coloring" href="" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+            </li>
+            <li class="mobile__sos--blue">
+              <a class="mobile__sos--coloring" href="" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
 
     <main block>
       <section class="section block">

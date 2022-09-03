@@ -99,6 +99,9 @@
 /*------------------------checkbox*/
 
 .modal__modal-checkbox{
+  @media screen and (min-width:1200px) {
+      margin-bottom: 31px;
+    }
   margin-bottom: 30px;
 }
 
@@ -106,7 +109,7 @@
   position: relative;
   font-family: Roboto;
   font-style: Regular;
-  @include font (14px, 1.46, $weight: 400, $spacing: 0.03em);
+  @include font (12px, 1.46, $weight: 400, $spacing: 0.03em);
   color: $text-color;
   cursor: pointer;
   display: flex;
@@ -137,6 +140,12 @@
     .modal-checkbox__check:focus + & {
       border-color: $accend-color;
     }
+  }
+}
+
+.modal-checkbox__label{
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
   }
 }
 
