@@ -1,6 +1,6 @@
 /*---------------------------header*/
 .header {
-  @include font(14px, 1.14, 500, 0.02em);
+  @include font (14px, 1.14, 500, 0.02em);
   border-bottom: 1px solid #ececec;
 }
 

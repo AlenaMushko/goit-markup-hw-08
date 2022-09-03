@@ -19,40 +19,40 @@
     <!--heder-->
     <header class="header">
       <div class="container header__container">
-        
         <a class="logo__web">Web<span class="logo">Studio</span></a>
         <div class="header__tablet">
-        <nav class="header__nav">
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link--current">Студія</a>
+          <nav class="header__nav">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link--current">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="Контакты" class="site-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="auth-nav">
+            <li class="auth-nav__item">
+              <a href="mailto:info@devstudio.com" class="auth-nav__link">
+                <svg class="auth-nav__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope-hover"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="Контакты" class="site-nav__link">Контакти</a>
+            <li class="auth-nav__item">
+              <a href="tel:+380961111111" class="auth-nav__link">
+                <svg class="auth-nav__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-       
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
-            <a href="mailto:info@devstudio.com" class="auth-nav__link">
-              <svg class="auth-nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="auth-nav__link">
-              <svg class="auth-nav__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
         </div>
         <!--mobail-->
         <button class="header__button-menu" type="button" data-menu-open>
@@ -210,30 +210,61 @@
           <ul class="work section__work--margin-negative">
             <li class="work__item">
               <div class="work__wrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/do-1/what-we-do-img01.jpg    1x,
+                      ./images/do-1/what-we-do-img01-2x.jpg 2x
+                    "
+                    src="./images/do-1/what-we-do-img01.jpg"
+                    media="min-width:1200px"
+                  />
+                </picture>
                 <img
-                  src="./images/gfoto-left.jpg"
+                  src="./images/do-1/what-we-do-img01.jpg"
                   alt="мужчина работает на пк над созданинм сайтта"
                   width="370"
+                  height="294"
                 />
                 <p class="work__text">десктопні додатки</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__wrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/do-2/what-we-do-img02.jpg    1x,
+                      ./images/do-2/what-we-do-img02-2x.jpg 2x
+                    "
+                    src="./images/do-2/what-we-do-img02.jpg"
+                    media="min-width:1200px"
+                  />
+                </picture>
                 <img
-                  src="./images/foto-centr.jpg"
+                  src="./images/do-2/what-we-do-img02.jpg"
                   alt="женщина разрабатывает мобильное приложение"
                   width="370"
+                  height="294"
                 />
                 <p class="work__text">мобільні додатки</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__wrap">
+                <picture>
+                  <source
+                    srcset="./images/do-3/what-we-do-img03.jpg 1x"
+                    srcset="./images/do-3/what-we-do-img03-2x.jpg 2x"
+                    src="./images/do-3/what-we-do-img03.jpg"
+                    media="min-width:1200px"
+                  />
+                </picture>
                 <img
-                  src="./images/foto-ryght.jpg"
+                  src="./images/do-3/what-we-do-img03.jpg"
                   alt="дизайнер работает над палитрой на планшете"
                   width="370"
+                  height="294"
                 />
                 <p class="work__text">дизайнерські рішення</p>
               </div>
@@ -247,8 +278,45 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team section__team">
             <li class="team__item">
-              <img class="team__link" src="./images/man1.jpg" alt="фото мужчины в очках, что
-              улыбается. Похожий на Понамарева width=" 270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor/our-team-photo-igor-demjanenko.jpg    1x,
+                    ./images/igor/our-team-photo-igor-demjanenko-2x.jpg 2x
+                  "
+                  src="./images/igor/our-team-photo-igor-demjanenko.jpg"
+                  media="min-width: 1200px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="./images/igor/our-team-photo-igor-demjanenko-tablet.jpg 1x, .
+                  /images/igor/our-team-photo-igor-demjanenko-tablet-2x.jpg 2x"
+                  src="./images/igor/our-team-photo-igor-demjanenko-tablet.jpg"
+                  media="min-width: 768px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor/our-team-photo-igor-demjanenko-mob.jpg    1x,
+                    ./images/igor/our-team-photo-igor-demjanenko-mob-2x.jpg 2x
+                  "
+                  src="./images/igor/our-team-photo-igor-demjanenko-mob.jpg"
+                  media="min-width: 480px"
+                />
+              </picture>
+
+              <img
+                class="team__link"
+                src="./images/igor/our-team-photo-igor-demjanenko-mob.jpg"
+                alt="фото мужчины в очках, что
+              улыбается. Похожий на Понамарева"
+                width=" 450"
+                height="460"
+              />
 
               <div class="team__wrap">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
@@ -287,11 +355,45 @@
             </li>
 
             <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga/our-team-photo-olga-repina.jpg    1x,
+                    ./images/olga/our-team-photo-olga-repina-2x.jpg 2x
+                  "
+                  src="./images/olga/our-team-photo-olga-repina.jpg"
+                  media="min-width: 1200px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga/our-team-photo-olga-repina-tablet.jpg    1x,
+                    ./images/olga/our-team-photo-olga-repina-tablet-2x.jpg 2x
+                  "
+                  src="./images/olga/our-team-photo-olga-repina-tablet.jpg"
+                  media="min-width: 768px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga/our-team-photo-olga-repina-mob.jpg    1x,
+                    ./images/olga/our-team-photo-olga-repina-mob-2x.jpg 2x
+                  "
+                  src="./images/olga/our-team-photo-olga-repina-mob.jpg"
+                  media="min-width: 480px"
+                />
+              </picture>
+
               <img
                 class="team__link"
-                src="./images/women.jpg"
+                src="./images/olga/our-team-photo-olga-repina-mob.jpg"
                 alt="фото веселой женщины в очках"
-                width="270"
+                width="450"
+                height="460"
               />
               <div class="team__wrap">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
@@ -331,12 +433,47 @@
             </li>
 
             <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolai/our-team-photo-nikolai-tarasov.jpg    1x,
+                    ./images/nikolai/our-team-photo-nikolai-tarasov-2x.jpg 2x
+                  "
+                  src="./images/nikolai/our-team-photo-nikolai-tarasov.jpg"
+                  media="min-width: 1200px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolai/our-team-photo-nikolai-tarasov-tablet.jpg      1x,
+                    ./images/nikolai/our-team-photo-nikolai-tarasov-tablet-2x.jpg2x
+                  "
+                  src="./images/nikolai/our-team-photo-nikolai-tarasov-tablet.jpg"
+                  media="min-width: 768px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolai/our-team-photo-nikolai-tarasov-mob.jpg    1x,
+                    ./images/nikolai/our-team-photo-nikolai-tarasov-mob-2x.jpg 2x
+                  "
+                  src="./images/nikolai/our-team-photo-nikolai-tarasov-mob.jpg"
+                  media="min-width: 480px"
+                />
+              </picture>
+
               <img
                 class="team__link"
-                src="./images/man2.jpg"
+                src="./images/nikolai/our-team-photo-nikolai-tarasov-mob.jpg"
                 alt="фото мужчины с искренней улыбкой"
-                width="270"
+                width="450"
+                height="460"
               />
+
               <div class="team__wrap">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -375,12 +512,43 @@
             </li>
 
             <li class="team__item">
+              <picture>
+                <source
+                  srcset="./images/mihail/our-team-photo-mihail-ermakov.jpg 1x. 
+                ./images/mihail/our-team-photo-mihail-ermakov-2x.jpg 2x"
+                  src="./images/mihail/our-team-photo-mihail-ermakov.jpg"
+                  media="min-width: 1200px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/mihail/our-team-photo-mihail-ermakov-tablet.jpg    1x,
+                    ./images/mihail/our-team-photo-mihail-ermakov-tablet-2x.jpg 2x
+                  "
+                  src="./images/mihail/our-team-photo-mihail-ermakov-tablet.jpg"
+                  media="min-width: 768px"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="./images/mihail/our-team-photo-mihail-ermakov-mob.jpg 1x"
+                  srcset="./images/igor/our-team-photo-igor-demjanenko-mob-2x.jpg 2x"
+                  src="./images/mihail/our-team-photo-mihail-ermakov-mob.jpg"
+                  media="min-width: 480px"
+                />
+              </picture>
+
               <img
                 class="team__link"
-                src="./images/man3.jpg"
+                src="./images/mihail/our-team-photo-mihail-ermakov-mob.jpg"
                 alt="фото мужчины в чорной футболке с улыбкой как в голивудского разбойника"
-                width="270"
+                width="450"
+                height="460"
               />
+
               <div class="team__wrap">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
