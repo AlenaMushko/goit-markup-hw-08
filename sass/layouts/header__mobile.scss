@@ -1,11 +1,10 @@
-/*---------------------------header*/
+/*---------------------------header-mabile*/
 .header {
   @include font (14px, 1.14, 500, 0.02em) ;
   border-bottom: 1px solid #ececec;
 }
 
-.header__nav {
-}
+
 
 .header__container {
   /*display: flex;

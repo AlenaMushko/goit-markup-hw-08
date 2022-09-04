@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
 justify-content: space-between;
-  min-height: 80px;
+  min-height: 60px;
 }
 
 .header__tablet{
@@ -21,18 +21,16 @@ justify-content: space-between;
     padding-top: 21px;
     padding-bottom: 21px;
    width: 100%;
+   margin-left: 88px;
   } 
     @media screen and(min-width:1200px) {
       padding-top: 32px;
         padding-bottom: 32px;
+        margin-left: 93px;
     }
 }
 
-.header__tablet .header__nav{
 
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .header__tablet .site-nav{
   display: flex;
@@ -68,7 +66,7 @@ transition: color $transform;
   position: absolute;
 
   left: 0;
-  bottom: -36px;
+  bottom: -33px;
 
   content: '';
   display: block;
@@ -91,7 +89,7 @@ margin: 0;
     margin-left: auto;
     gap: 10px;
 
-    align-items: flex-end;
+    
    
   @media screen and(min-width:1200px) {
     flex-direction: row;
@@ -129,7 +127,7 @@ margin: 0;
         color: $text-color;
 
   @media screen and(min-width:1200px) {
-     
+    @include font(14px, 1.14, 500, 0.02em);
       
     }
 }

@@ -3,7 +3,7 @@
   text-align: center;
   color: $primery-color;
 
-  @media screen and (max-width:1199px) {
+  @media screen and (min-width:1199px) {
     @include font(36px, 1.17, 700, $spacing: 0.03em);
   }
 }

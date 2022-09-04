@@ -30,11 +30,12 @@
   @extend .button;
   min-width: 26px;
   padding: 6px 22px;
+  border-radius: 4px;
 
   color: $primery-color;
   background-color: $background-grey-color;
   border-color: transparent;
-  @include font (500, 16px, 1.6, $spacing:0.03em);
+  @include font ( 16px, 1.63, 500, $spacing:0.03em);
   
   transition: color $transform, background-color $transform, box-shadow $transform;
 

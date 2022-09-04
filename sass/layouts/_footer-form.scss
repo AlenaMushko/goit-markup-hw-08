@@ -5,10 +5,7 @@
         width: 100%;
   }
 
-@media screen and (max-width:1199px) {
-   margin-bottom: 60px;
-    
-  }
+
 
     @media screen and (min-width:1200px) {
       margin-left: 93px;
@@ -18,7 +15,7 @@
 
 .footer-form {
 @media screen and (max-width:1199px) {
-    margin: 0 auto;
+    
     display: flex;
     flex-direction: column;
   }
