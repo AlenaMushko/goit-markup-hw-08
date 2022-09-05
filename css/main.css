@@ -532,20 +532,19 @@ a {
   color: #2196f3;
 }
 
-.mobile__sos .mobile__sos--blue::after + .mobile__sos--blue {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 22px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+.mobile__sos .mobile__sos--blue:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-/* --------смужка через бордер
-  .mobile__sos .mobile__sos--blue:not(:last-child) {
+/* --------смужка через бордер.mobile__sos .mobile__sos--blue::after+.mobile__sos--blue {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-
-  }*/
+}
+  */
 /*----------------------greeting*/
 .greeting {
   padding-top: 118px;
